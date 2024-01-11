@@ -1,0 +1,18 @@
+import React from "react";
+import NAV from "./NavBar";
+import ABOUT from "./About";
+
+function HERO(){
+    return(
+        <>
+        <div className="container">
+        <NAV></NAV>
+
+        <ABOUT></ABOUT>
+        </div>
+        </>
+    )
+
+}
+
+export default HERO;
