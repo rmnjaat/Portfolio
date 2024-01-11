@@ -36,7 +36,7 @@
     border-bottom-left-radius: 30px;
     */
     cursor: pointer;
-    transition: box-shadow 0.3s ease-in;
+    transition: color 1s ease-in;
     
    
 }
@@ -64,6 +64,6 @@ a{
     color: gray;
     font-size: 20px;
     letter-spacing: 2px;
-    transition: color 0.3s ease-in;
+    transition: color 0.1s ;
 }
 
