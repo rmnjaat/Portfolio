@@ -1,0 +1,41 @@
+.summary{
+    height: 100vh;
+    margin-top:16vh;
+}
+
+
+.heading{
+    margin-left: 5vw;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.83);
+    /* color: rgba(47, 47, 47, 0.766); */
+}
+
+.heading h1::first-letter{
+    font-size:120px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.83);
+}
+
+.line{
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.627);
+    width:10%;
+    margin-left: 2.7vw;
+}
+
+.paragraph{
+    padding-left:5vw;
+    margin-top: 29px;
+    padding-right: 8vw;
+    color: rgba(36, 36, 36, 0.871)    ;
+}
+
+.paragraph h3{
+    font-weight: 100;
+    letter-spacing: 1.2px;
+    font-size: 33px;
+    line-height:45px;
+}

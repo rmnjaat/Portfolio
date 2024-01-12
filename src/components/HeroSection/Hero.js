@@ -5,7 +5,7 @@ import ABOUT from "./About";
 function HERO(){
     return(
         <>
-        <div className="container">
+        <div className="containeer">
         <NAV></NAV>
 
         <ABOUT></ABOUT>
