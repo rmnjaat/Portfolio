@@ -1,6 +1,8 @@
 import './App.css';
 import HERO from './components/HeroSection/Hero';
 import SUMMARY from './components/Summary/summary';
+import SKILL from './components/Skills/skill';
+import PROJECTS from'./components/Projects/project'
 
 function App() {
   return (
@@ -12,6 +14,17 @@ function App() {
       <SUMMARY>
         
       </SUMMARY>
+
+      <SKILL>
+        
+      </SKILL>
+
+      <PROJECTS>
+        
+      </PROJECTS>
+      
+
+
 
 
      

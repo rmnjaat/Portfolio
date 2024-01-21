@@ -298,10 +298,12 @@ function skill() {
 
                 </div>
 
+                <hr />
+
             </div>
 
 
-
+            
         </>
     )
 }
