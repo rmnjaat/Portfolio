@@ -1,5 +1,5 @@
 .projects-main-continer{
-    height:100vh;
+    /* height:100vh; */
     /* background-color: aquamarine; */
 }
 
@@ -41,7 +41,8 @@
     /* box-shadow: inset 0px -50px 40px -20px rgba(0, 0, 0, 0.75); */
     
     padding: 10px 10px 0px 30px;
-    margin:10px 0px;
+    margin:50px 0px;
+    margin-bottom: 100px;
     
     
     
@@ -111,9 +112,10 @@
     margin-top:clamp(40px,5%,50px);
     letter-spacing: 2px;
     font-weight: 500;
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: clamp(20px,1.3vw,40px);
     
-    line-height: 24px;
+    /* line-height: 24px; */
 
     max-height: 160px;
     overflow: hidden;
