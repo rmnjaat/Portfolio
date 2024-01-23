@@ -1,0 +1,130 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+/* body{
+	font-family: 'Poppins', sans-serif;
+} */
+.timeline-section{
+	/* background-color: #24292d; */
+
+	padding: 100px 15px;
+}
+
+.e-heading{
+    width: max-content;
+}
+/* */
+
+.timeline-items{
+	max-width: 1600px;
+	margin:auto;
+    margin-top: 90px;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2.8px;
+    top:0px;
+	height:calc( 62%);
+	background-color: #1c1c1cab;
+	left: calc(50% - 1px);
+
+    animation: movedown 3s linear forwards;
+}
+@keyframes movedown{
+    0%{
+        height: 0;
+    }
+    100%{
+        height:calc( 62%);
+    }
+}
+
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: #eaa023;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+
+.timeline-content{
+    /* background-color: #2f363e; */
+    box-shadow: 0px 0px 50px  rgba(119, 119, 119, 0.079);
+	padding: 30px;
+	border-radius: 5px;
+}
+.timeline-content h3{
+    font-size: 40px;
+	color: #2c2c2c;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.timeline-content h2{
+    font-size: 20px;
+    color: #2c2c2cbe;
+    margin:10px 0 10px;
+    text-transform: capitalize;
+    font-weight: 100;
+    
+
+}
+.timeline-content p{
+    /* color: #c8c8c8; */
+    margin-top: 20px;
+    color:rgba(36, 36, 36, 0.871);
+	font-size: 26px;
+    letter-spacing: 1px;
+	font-weight: 300;
+	line-height: 25px;
+}
+.timeline-content small{
+    font-size: 15px;
+    color: #2c2c2cbe;
+}
+
+/* responsive */
+@media(max-width: 1025px){
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+}
+
+

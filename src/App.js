@@ -32,7 +32,9 @@ function App() {
       <Projets_Details>
         
       </Projets_Details>
+
       
+      <EDUCATION></EDUCATION>
 
 
 
