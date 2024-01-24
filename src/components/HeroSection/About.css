@@ -73,8 +73,7 @@ span {
     letter-spacing: 2px;
 
 }
-
-button:hover {
+.button button:hover {
     /* background: rgba(128, 128, 128, 0.197); */
     /* background:whitesmoke; */
     background-color: rgba(245, 245, 245, 0.376);
