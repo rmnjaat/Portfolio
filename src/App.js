@@ -7,6 +7,7 @@ import EDUCATION from './components/Education/ed.js'
 
 import Projets_Details from './components/projectDeital/p_detail.js';
 
+import Footer from './components/footer/ft.js';
 
 function App() {
   return (
@@ -35,6 +36,11 @@ function App() {
 
       
       <EDUCATION></EDUCATION>
+
+
+      <Footer></Footer>
+
+
 
 
 
