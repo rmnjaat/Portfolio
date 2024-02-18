@@ -51,7 +51,7 @@ a:hover {
     .n-navi .n-nav-links {
         justify-content: space-between;
         column-gap: 10px;
-        width: 80%;
+        width: 50%;
     }
 
 }
