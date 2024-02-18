@@ -4,7 +4,7 @@ import './p_detail.css';
 
 
 
-import p2photo from '/home/kartik/Pictures/Programs/newportfolio/src/components/Images/Screenshot from 2024-01-21 21-03-55.png'
+import p2photo from '/home/kartik/Pictures/Programs/newportfolio/src/components/Images/p1img.png'
 
 
 function Pdetails() {
@@ -106,8 +106,8 @@ function Pdetails() {
 
                         <div className="pdetaislbuttons">
 
-                            <a href="#" className="code p-b"> View Code</a>
-                            <a href="#" className="code p-b"> Live App</a>
+                            <a href="#" className="code p-b p-c"> View Code</a>
+                            <a href="#" className="code p-b p-d"> Live App</a>
 
 
                         </div>
