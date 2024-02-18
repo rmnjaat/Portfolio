@@ -12,7 +12,7 @@ function ED() {
             <div class="timeline-section">
                 <div className="e-heading  heading">
                     <h1>Eduation</h1>
-                    <div className="e-line line"></div>
+                    <div className="e-line pline"></div>
                 </div>
 
                 <div class="timeline-items">

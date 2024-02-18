@@ -108,3 +108,12 @@
 .pp{
     font-size:30px;
 }
+
+@media screen and (max-width:1104px) {
+    
+    .Boxes {
+        
+        justify-content: space-around;
+    }
+
+}

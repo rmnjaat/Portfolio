@@ -30,18 +30,19 @@
 }
 
 .c-handles {
-    width: 27%;
+    /* width: 27%; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     box-sizing: border-box;
+    column-gap: 11px;
     
 }
 
 .c-handle{
     box-sizing: border-box;
-    height: 80%;
+    /* height: 80%; */
     
     /* background-color: beige; */
     
@@ -175,6 +176,12 @@
     margin: 0 5px;
 }
 
+.phone:hover{
+    a{
+       
+        color: rgba(17, 79, 204, 0.752);
+    }
+}
 @media screen and (max-width: 520px) {
     .screen-body {
         flex-direction: column;

@@ -20,7 +20,7 @@ const Project_list=[
 
             techUsed:[...FrontEnd_List.filter(item =>["Html","Css","Javascript","React"].includes(item.name) )],
 
-            details:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, hic mollitia facilis optio iste laudantium fugiat? Nulla, commodi! Nisi quibusdam sed natus inventore ipsa voluptatum incidunt rem blanditiis quisquam eligendi.      ",
+            details:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, hic mollitia facilis optio iste laudantium fugiat? Nulla, commodi! Nisi quibusdam sed natus inventore ipsa voluptatum incidunt rem blanditiis quisquam eligendi.   ",
 
             photo:"/images/p1img.png",
             photo_large:"/images/p1img.png",

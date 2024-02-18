@@ -5,7 +5,7 @@ import SKILL from './components/Skills/skill';
 import PROJECTS from'./components/Projects/project'
 import EDUCATION from './components/Education/ed.js'
 
-import Projets_Details from './components/projectDeital/p_detail.js';
+// import Projets_Details from './components/projectDeital/p_detail.js';
 
 import Footer from './components/footer/ft.js';
 
@@ -27,13 +27,6 @@ function App() {
       <PROJECTS>
         
       </PROJECTS>
-
-
-
-      <Projets_Details>
-        
-      </Projets_Details>
-
       
       <EDUCATION></EDUCATION>
 

@@ -49,8 +49,8 @@ span {
 
 
 .button {
-    margin-top: 45px; 
-     margin-bottom: -19%;
+    /* margin-top: 45px; 
+     margin-bottom: -19%; */
 }
 
 .button button {
@@ -86,8 +86,9 @@ span {
 
 
 .social {
-    margin-top: 65%;
-    margin-bottom: -60%;
+    /* margin-top: calc(90vh - 403px);
+    margin-bottom: calc(60vh - 403px);     */
+    /* margin-bottom: -60%; */
     display: flex;
     justify-content: flex-start;
     box-sizing: border-box;

@@ -1,17 +1,30 @@
-import React from "react";
+import React, {useState,useEffect} from "react";
 import './project.css';
 import Project_list from "./project_api";
+import Pdetails from "../projectDeital/p_detail";
 
 
 
 function Project() {
+
+     const [selectedProject, setSelectedProject] = useState(null);
+     const [show, setshow] = useState(false);
+
+  
+
+    const handleProjectClick = (projectId) => {
+        const clickedProject = Project_list.find(project => project.id === projectId);
+
+        setSelectedProject(clickedProject); // Show details of clicked project
+        setshow(true);
+    }
     return (
         <>
             <div className="projects-main-continer">
                 <div className="heading" >
                     <div className="hl">
                         <h1>Projects</h1>
-                        <div className="line"></div>
+                        <div className="pline"></div>
                     </div>
                 </div>
 
@@ -29,7 +42,7 @@ function Project() {
 
 
 
-                            <div className="project_div" key={project.id}>
+                            <div className="project_div" key={project.id} id={project.id}  onClick={() => handleProjectClick(project.id)}>
 
                                 <div className="project-info">
                                     <div className="project-info-heading">
@@ -90,6 +103,8 @@ function Project() {
                 </div>
 
             </div>
+
+            {(selectedProject) && <Pdetails project={selectedProject} />} 
         </>
     )
 }

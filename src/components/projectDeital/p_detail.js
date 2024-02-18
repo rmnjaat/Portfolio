@@ -7,7 +7,7 @@ import './p_detail.css';
 import p2photo from '/home/kartik/Pictures/Programs/newportfolio/src/components/Images/p1img.png'
 
 
-function Pdetails() {
+function Pdetails({project}) {
 
     const [crxx, setCrxx] = useState(true);
 
@@ -29,76 +29,43 @@ function Pdetails() {
                     <div className="pdetails">
 
                         <div className="pdetails_img">
-                            <img src={p2photo} alt="" />
+                            <img src={project.photo_large} alt="" />
                         </div>
 
 
                         <div className="pdetails_info">
 
                             <div className="project-info-heading">
-                                <h1>    Portfolio</h1>
+                                <h1>{project.name}</h1>
                             </div>
 
 
                             <div className="p-list">
-                                <div className="list-cont">
-                                    <div className="p-list-img">
-
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-
-                                    </div>
-
-                                    <div className="p-list-name">
-                                        Html
-                                    </div>
-
-                                </div>
-
-                                <div className="list-cont">
-                                    <div className="p-list-img">
-
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-
-                                    </div>
-
-                                    <div className="p-list-name">
-                                        Css
-                                    </div>
-
-                                </div>
-
-                                <div className="list-cont">
-                                    <div className="p-list-img">
-
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-
-                                    </div>
-
-                                    <div className="p-list-name">
-                                        Javascript
-                                    </div>
-
-                                </div>
+                            {
+                                                project.techUsed.map(techu => (
 
 
-                                <div className="list-cont">
-                                    <div className="p-list-img">
+                                                    <div className="list-cont" key={techu.id}>
+                                                        <div className="p-list-img">
 
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                                                            <img src={techu.image} />
 
-                                    </div>
+                                                        </div>
 
-                                    <div className="p-list-name">
-                                        React
-                                    </div>
+                                                        <div className="p-list-name">
+                                                            {techu.name}
+                                                        </div>
 
-                                </div>
+                                                    </div>
+
+                                                ))
+
+                                            }
 
                             </div>
 
                             <div className="D-project-details">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, hic mollitia facilis optio iste laudantium fugiat? Nulla, commodi! Nisi quibusdam sed natus inventore ipsa voluptatum incidunt rem blanditiis quisquam eligendi.
-                                    Id adipisci quia aperiam fugiat voluptatibus ex quidem vero dolor accusamus. Mollitia, recusandae aliquid veniam doloribus optio quam id ex sapiente in sequi perspiciatis vel asperiores vero autem magni nulla.</p>
+                                            <p>{project.ddesc_long}</p>
                             </div>
 
                         </div>
@@ -106,8 +73,8 @@ function Pdetails() {
 
                         <div className="pdetaislbuttons">
 
-                            <a href="#" className="code p-b p-c"> View Code</a>
-                            <a href="#" className="code p-b p-d"> Live App</a>
+                            <a href={project.codeLink} className="code p-b p-d"> View Code</a>
+                            <a href={project.LiveApp} className="code p-b p-c"> Live App</a>
 
 
                         </div>

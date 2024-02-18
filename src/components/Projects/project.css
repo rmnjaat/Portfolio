@@ -9,7 +9,7 @@
    
 
 }
-.line {
+.pline {
     height: 3px;
     background-color: rgba(0, 0, 0, 0.627);
     width: calc(100% - 2.7vw);
@@ -115,6 +115,7 @@
     font-weight: 500;
     /* font-size: 25px; */
     font-size: clamp(20px,1.3vw,23px);
+    color: rgba(36, 36, 36, 0.871);
     
     /* line-height: 24px; */
 
@@ -141,4 +142,24 @@
     /* background-size: cover; */
     height:100%;
     /* aspect-ratio: 1.9/1; */
+}
+
+.phone{
+    
+}
+
+
+@media screen and (max-width: 770px) {
+
+.project-image{
+    
+    /* background-color: black; */
+    min-width:96%;
+
+
+}
+
+.project-info {
+    width: 96%;
+}
 }
