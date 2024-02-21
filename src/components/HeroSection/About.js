@@ -19,7 +19,7 @@ function ABOUT() {
                             Web & Java  Developer </h1>
                     </div>
                     <div className="button">
-                        <button type="button">Dowanload CV</button>
+                        <button type="button">Download CV</button>
                     </div>
 
 
