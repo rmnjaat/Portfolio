@@ -18,10 +18,14 @@ function Pdetails({ project, setshow }) {
 						<img src={project.photo_large} alt="" />
 					</div>
 
+<<<<<<< HEAD
 					<div className="pdetails_info">
 						<div className="project-info-heading">
 							<h1>{project.name}</h1>
 						</div>
+=======
+// import p2photo from '/home/kartik/Pictures/Programs/newportfolio/src/components/Images/p1img.png'
+>>>>>>> 4d12ac3 ( merged conflict)
 
 						<div className="p-list">
 							{project.techUsed.map((techu) => (
