@@ -14,7 +14,7 @@ function ABOUT() {
         <>
             <div className="main-container">
                 <div className="para">
-                    <div>
+                    <div >
                         <h1>Hi , I'm  <br />  <span>Raman Jangu</span> <br />
                             Web & Java  Developer </h1>
                     </div>

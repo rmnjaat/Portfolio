@@ -1,13 +1,7 @@
 import React from 'react';
 import './ed.css';
 
-<<<<<<< HEAD
-=======
-// import lpu from '/home/kartik/Pictures/Programs/newportfolio/src/components/Images/lpu2.png'
-// import jnv from '/home/kartik/Pictures/Programs/newportfolio/src/components/Images/JNV (1).jpg'
 
-
->>>>>>> 4d12ac3 ( merged conflict)
 function ED() {
 	return (
 		<>

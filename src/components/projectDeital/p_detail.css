@@ -45,6 +45,9 @@
 	float: right;
 	padding: 2px 2px;
 }
+.cross button:hover{
+	cursor: pointer;
+}
 .cross button {
 	text-decoration: none;
 	background-color: white;
