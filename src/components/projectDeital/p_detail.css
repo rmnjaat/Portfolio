@@ -129,3 +129,28 @@
 	background-color: rgba(54, 54, 54, 0.419);
 	color: rgb(52, 52, 52);
 }
+
+
+@media screen and (max-width:1500px) {
+	.pdetails_img img {
+		
+		aspect-ratio: 4/1;
+	}
+	
+	.code{
+	font-size: clamp(10px, 1vw, 23px);
+	}
+
+	.D-project-details{
+	
+	margin-top: clamp(20px, 4%, 50px);
+	letter-spacing: 1.2px;
+	}
+
+	.D-project-details p{
+		letter-spacing: 1.1px;
+	}
+
+
+
+}

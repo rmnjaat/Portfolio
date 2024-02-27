@@ -191,7 +191,7 @@ border-bottom: solid rgba(122, 122, 122, 0.433) 2px;
 } */
 
 
-@media  screen and (max-width:1198px) {
+@media  screen and (max-width:1500px) {
     .para{
         font-size: 21px;
     }
@@ -200,7 +200,7 @@ border-bottom: solid rgba(122, 122, 122, 0.433) 2px;
     }
     span {
         
-        font-size: 65px;
+        font-size: 70px;
     }
     .picture img{
         scale: 0.9;

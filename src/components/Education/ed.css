@@ -21,6 +21,7 @@
 .timeline-items{
 	max-width: 1600px;
 	margin:auto;
+	
     margin-top: 90px;
 	display: flex;
 	flex-wrap: wrap;
@@ -110,21 +111,44 @@
 }
 
 /* responsive */
+
+@media screen and (max-width:1500px) {
+	.timeline-content h3{
+		font-size: 37px;
+	}
+	.timeline-content h2 {
+		font-size: 16px;
+	}
+	.timeline-content small{
+		font-size: 12px;
+	}
+	.timeline-content p{
+		font-size: 20px;
+	}
+
+
+	.timeline-items{
+		margin:0px 50px ;
+		
+		margin-top: 70px;
+	}
+	
+}
+
 @media(max-width: 1025px){
 	.timeline-items::before{
 		left: 7px;
-	}
+	}	
 	.timeline-item:nth-child(odd){
 		padding-right: 0;
 		text-align: left;
-	}
+	}	
 	.timeline-item:nth-child(odd),
 	.timeline-item:nth-child(even){
 		padding-left: 37px;
-	}
+	}	
 	.timeline-dot{
 		left:0;
-	}
-}
-
+	}	
+}	
 

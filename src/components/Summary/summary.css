@@ -6,7 +6,7 @@
 
 .heading {
     margin-left: 5vw;
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: 3px;
     font-weight: 100;
     color: rgba(0, 0, 0, 0.83);
@@ -54,3 +54,19 @@
     letter-spacing:2.5px;
 }
 
+@media  screen and (max-width:1500px) {
+    .paragraph h3{
+        letter-spacing: 1.1px;
+        font-size: 23px;
+        line-height: 36px;
+    }
+    .quote{
+        font-size: 20px;
+        font-style: italic;
+        letter-spacing:2px;
+    }
+    .heading h1::first-letter {
+        font-size: 80px;
+    }
+    
+}

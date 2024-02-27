@@ -163,3 +163,20 @@
     width: 96%;
 }
 }
+
+@media screen and (max-width:1500px) {
+    .p-list-name {
+    font-size: 17px;
+    }
+    .project-info-heading{
+        font-size: 23px;
+    }
+    .project-info-technologyuSED {
+        margin-top: 10px;
+    }
+    .project-details {
+        /* margin-top: clamp(20px, 5%, 50px); */
+        margin-top: 20px;
+    }
+    
+}
