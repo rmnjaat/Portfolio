@@ -1,5 +1,10 @@
 const Other_List=[
     {
+        id:0,
+        image:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg",
+        name: "Springboot"
+    },
+    {
         id:1,
         image:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg",
         name:"Windows"
@@ -30,6 +35,7 @@ const Other_List=[
         image:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
         name:"Github"
     }
+   
 
 ]
 

@@ -1,5 +1,5 @@
-    import React from "react";
-
+import { React, useState } from "react";
+import emailjs from 'emailjs-com';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -9,6 +9,37 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import './ft.css';
 
 function Footer() {
+
+
+
+    const [formData, setFormData] = useState({
+        email: '',
+        contactNo: '',
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        emailjs.send('service_xh51116', 'template_qsrd0l4', formData, 'M1SHPwM55nQeVHd5K')
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Message sent successfully!');
+            }, (error) => {
+                console.error('FAILED...', error);
+                alert('Failed to send message. Please try again later.');
+            });
+
+        // Optionally, clear the form fields after submission
+        setFormData({ email: '', contactNo: '', message: '' });
+    };
 
     return (
 
@@ -21,7 +52,7 @@ function Footer() {
 
                     </div>
                     {/* <div class="app-contact">CONTACT INFO : +91 8059717919</div> */}
-                 
+
 
                     <div className="c-social">
 
@@ -60,23 +91,43 @@ function Footer() {
 
                 </div>
                 <div class="screen-body-item">
-                    <div class="app-form">
-
-                        <div class="app-form-group">
-                            <input class="app-form-control" placeholder="EMAIL" required />
+                    <form className="app-form" onSubmit={handleSubmit}>
+                        <div className="app-form-group">
+                            <input
+                                className="app-form-control"
+                                placeholder="EMAIL"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                required
+                            />
                         </div>
-                        <div class="app-form-group">
-                            <input class="app-form-control" placeholder="CONTACT NO" required />
+                        <div className="app-form-group">
+                            <input
+                                className="app-form-control"
+                                placeholder="CONTACT NO"
+                                name="contactNo"
+                                value={formData.contactNo}
+                                onChange={handleChange}
+                                required
+                            />
                         </div>
-                        <div class="app-form-group message">
-                            <input class="app-form-control" placeholder="MESSAGE" />
+                        <div className="app-form-group message">
+                            <input
+                                className="app-form-control"
+                                placeholder="MESSAGE"
+                                name="message"
+                                value={formData.message}
+                                onChange={handleChange}
+                            />
                         </div>
-                        <div class="app-form-group buttons">
-                            <button class="app-form-button">SEND</button>
+                        <div className="app-form-group buttons">
+                            <button className="app-form-button">SEND</button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
+        
 
 
 
@@ -85,19 +136,19 @@ function Footer() {
 
 
             <div className="footer">
-                    <div className="navi">
+                <div className="navi">
 
 
-                        <ul class="nav-links">
+                    <ul class="nav-links">
 
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Skills</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Education</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
 
-                    </div>
+                </div>
 
                 <div className="cp">
                     <p>© 2024 Raman Jangu. All rights reserved.</p>
