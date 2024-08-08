@@ -33,7 +33,7 @@ function ED() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</div >
 		</>
 	);
 }

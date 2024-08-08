@@ -60,10 +60,21 @@ function Project() {
 							</div>
 						</div>
 					))}
+					<div className=" ">
+						<a href="https://github.com/rmnjaat" target='' >
+							<button type="button" className='project-button'> Explore More..</button>
+						</a>
+					</div>
+
+					
 				</div>
+
 			</div>
 
 			{show && <Pdetails setshow={setshow} project={selectedProject} />}
+
+
+
 		</>
 	);
 }

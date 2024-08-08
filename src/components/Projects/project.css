@@ -143,11 +143,23 @@
     height:100%;
     /* aspect-ratio: 1.9/1; */
 }
-
-.phone{
-    
+.project-button{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 35px;
+    background-color: #dedede;
+    cursor: pointer;
+    border-radius: 12px;
+    outline: none;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
+.project-button:hover{
+    background-color: #525252;
+}
 
 @media screen and (max-width: 770px) {
 

@@ -12,8 +12,8 @@ import './About.css'
 
 function ABOUT() {
     return (
-        <>
-            <div className="main-container">
+        
+            <div id="About" className="main-container" >
                 <div className="para">
                     <div >
                         <h1>Hi , I'm  <br />  <span>Raman Jangu</span> <br />
@@ -63,7 +63,7 @@ function ABOUT() {
                 </div>
 
             </div>
-        </>
+        
     )
 
 }

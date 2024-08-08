@@ -6,7 +6,7 @@ function HERO(){
     return(
         <>
         <div className="containeer">
-        <NAV></NAV>
+        {/* <NAV></NAV> */}
 
         <ABOUT></ABOUT>
         </div>

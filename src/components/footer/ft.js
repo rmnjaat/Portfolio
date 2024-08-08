@@ -136,7 +136,7 @@ function Footer() {
 
 
             <div className="footer">
-                <div className="navi">
+                {/* <div className="navi">
 
 
                     <ul class="nav-links">
@@ -148,7 +148,9 @@ function Footer() {
                         <li><a href="#">Contact Us</a></li>
                     </ul>
 
-                </div>
+                </div> */}
+
+                {/* To add nav here pleasse uncomment .cp nargin property */}
 
                 <div className="cp">
                     <p>© 2024 Raman Jangu. All rights reserved.</p>
